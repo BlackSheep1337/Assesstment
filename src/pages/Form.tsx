@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Stepper from "../components/Stepper";
 import InputForm from "../components/inputForm";
+import { FiGift } from "react-icons/fi";
+
 
 const Form: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -17,22 +19,22 @@ const Form: React.FC = () => {
         <Stepper steps={totalSteps} currentStep={currentStep} />
 
         {/* Form Header */}
-        <div className="text-center">
+        <div className="text-center mb-8">
             <h1 className="text-2xl font-semibold text-gray-800">Your Education 🎏</h1>
-            <p className="text-gray-600">Tell us about your academic background</p>
-            <p className="text-sm text-gray-500">800 WESPoints remaining to unlock ESA</p>
+            <p className="text-gray-600 mt-2">Tell us about your academic background</p>
+            <p className="text-sm text-blue-600 mt-2">800 WESPoints remaining to unlock ESA</p>
         </div>
 
         {/* Reward Box */}
-        <div className="p-4 bg-yellow-100 text-yellow-700 rounded-lg shadow-md">
-            <p>🥡 Your reward for this step is <strong>200 WESPoints</strong></p>
+        <div className="p-4 bg-blue-50 text-blue-700 rounded-lg shadow-md mb-8">
+            <p className="flex gap-2 text-xl"><FiGift /> Your reward for this step is <strong>200 WESPoints</strong></p>
         </div>
 
         {/* Form Inputs */}
             <InputForm />
 
         {/* Buttons */}
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mt-12">
             <button className="text-gray-500 hover:text-gray-700 transition cursor-pointer">
                 Skip For Now
             </button>

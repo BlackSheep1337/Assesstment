@@ -1,6 +1,6 @@
 const Stepper = ({ steps = 1, currentStep = 1 }) => {
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-4 mb-12">
       {Array.from({ length: steps }).map((_, index) => (
         <div
           key={index}

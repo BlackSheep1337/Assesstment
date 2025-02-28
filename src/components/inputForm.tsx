@@ -1,8 +1,6 @@
-import React from 'react'
-
 const inputForm = () => {
   return (
-    <form>
+    <form className="mt-8">
         <div className="mb-4">
         <label htmlFor="institution" className="block text-gray-700 font-medium">
             Name of Institution <span className="text-red-600">*</span>
